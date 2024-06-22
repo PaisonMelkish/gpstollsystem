@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+    <div class="Registration-Form">
+        <h1>Registration Form for Admin</h1>
+        <form action="/your-form-handler-route" method="post">
+            <p>Username:</p>
+            <input type="text" name="Username" placeholder="Username" required>
+            
+            <p>Mobile number:</p>
+            <input type="number" name="MobileNumber" placeholder="Eg:8883******" required>
+            
+            <button type="button" onclick="getOTP()">Get OTP</button>
+            
+            <p>Enter OTP:</p>
+            <input type="number" name="OTP" placeholder="Eg:****" required>
+            
+            <p>Password:</p>
+            <input type="password" name="Password" placeholder="******" required>
+            
+            <button type="submit">Login</button>
+            <button type="button" onclick="forgotPassword()">Forgot Password</button>
+        </form>
+        <a href="./page3.html">Next</a>
+    </div>
+
+    <script>
+        function getOTP() {
+            // Add your get OTP logic here
+            alert("OTP request sent");
+        }
+
+        function forgotPassword() {
+            // Add your forgot password logic here
+            alert("Forgot password process initiated");
+        }
+    </script>
+</body>
+</html>
